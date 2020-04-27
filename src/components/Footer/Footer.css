@@ -1,0 +1,27 @@
+.footerContainer {
+	background-color: #717c89;
+	display: flex;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 60px;
+	align-items: center;
+	justify-content: left;
+	color: white;
+	box-shadow: 0 0 5px 0 black;
+	font-family: 'Spartan', sans-serif;
+}
+
+.contactInfo {
+	display: flex;
+	font-size: 20px;
+	margin: 20px;
+}
+
+@media only screen and (max-width: 812px) {
+	.footerContainer {
+		align-items: center;
+		justify-content: center;
+	}
+}
