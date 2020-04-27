@@ -1,6 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Homepage.css';
 import Logo from '../../imgs/studioghiblilogo.png';
+import MovieCollage from '../../imgs/collage.jpg';
 
 function Homepage() {
 	return (
@@ -14,6 +16,10 @@ function Homepage() {
 					beloved animated works across the globe.
 				</p>
 			</main>
+			<section className='exploreContainer'>
+				<img className='movieCollage' src={MovieCollage} alt='film collage' />
+				<Link className='exploreMovies'>Explore Movies</Link>
+			</section>
 		</div>
 	);
 }
