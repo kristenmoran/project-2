@@ -1,6 +1,5 @@
 .title {
 	font-family: 'Roboto', sans-serif;
-	/* font-family: 'Spartan', sans-serif; */
 }
 
 .container {
@@ -31,8 +30,34 @@
 	font-family: 'Spartan', sans-serif;
 }
 
+.homepage:hover,
+.moviesButton:hover,
+.contact:hover {
+	text-decoration: underline;
+}
+
 .studioGhibliLogo {
 	width: 80%;
 }
 
+@media only screen and (max-width: 812px) {
+	.navContainer {
+		position: fixed;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 0 5px 0 black;
+		justify-content: center;
+	}
 
+	.container {
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.homepage,
+	.moviesButton,
+	.contact {
+		font-size: 25px;
+	}
+}
