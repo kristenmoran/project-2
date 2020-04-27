@@ -1,0 +1,38 @@
+.title {
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Spartan', sans-serif; */
+}
+
+.container {
+	background-color: #f6f0ed;
+	padding: 30px;
+	margin-top: 80px;
+}
+
+.navContainer {
+	background-color: #717c89;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 15px 0 black;
+}
+
+.homepage,
+.moviesButton,
+.contact {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	margin: 20px;
+	font-family: 'Spartan', sans-serif;
+}
+
+.studioGhibliLogo {
+	width: 80%;
+}
+
+
