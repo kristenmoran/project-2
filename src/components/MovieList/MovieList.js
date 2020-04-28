@@ -12,7 +12,7 @@ function MovieList({ films }) {
 			{films &&
 				films.map((movie) => (
 					<div key={movie.id} className='filmsList'>
-						<Link to='/films:title' className='films' key={movie.id}>
+						<Link to={'/films/' + movie.title} className='films' key={movie.id}>
 							{movie.title}
 						</Link>
 					</div>

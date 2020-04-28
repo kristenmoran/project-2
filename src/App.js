@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Homepage from './components/Homepage/Homepage';
 import MovieList from './components/MovieList/MovieList';
+import Movie from './components/Movie/Movie';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -27,6 +28,11 @@ function App() {
 					path='/films'
 					exact={true}
 					render={(props) => <MovieList films={films} />}
+				/>
+				<Route
+					path='/films/:title'
+					exact={true}
+					render={(props) => <Movie />}
 				/>
 			</Switch>
 			<Footer />
