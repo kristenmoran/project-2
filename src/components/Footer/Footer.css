@@ -1,7 +1,7 @@
 .footerContainer {
 	background-color: #717c89;
 	display: flex;
-	position: relative;
+	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -11,6 +11,7 @@
 	color: white;
 	box-shadow: 0 0 5px 0 black;
 	font-family: 'Spartan', sans-serif;
+	margin-top: 200px;
 }
 
 .contactInfo {
@@ -23,12 +24,14 @@
 	.footerContainer {
 		align-items: center;
 		justify-content: center;
-		position: relative;
+		position: fixed;
+		bottom: 0;
 	}
 }
 
 @media only screen and (min-width: 375px) {
 	.footerContainer {
-		position: relative;
+		position: fixed;
+		bottom: 0;
 	}
 }

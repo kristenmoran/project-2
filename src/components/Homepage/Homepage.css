@@ -2,7 +2,17 @@
 	background-color: #f6f0ed;
 	flex-direction: column;
 	display: flex;
-	height: 900px;
+	height: auto;
+	width: 100%;
+	overflow: scroll;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	overflow: auto;
+	margin-bottom: 60px;
 }
 
 .studioGhibliLogo {
@@ -56,39 +66,46 @@
 		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 0px;
+		margin-top: 10px;
 	}
 
 	.about {
 		padding-right: 20px;
 		padding-left: 20px;
-		margin-top: 30px;
+		margin-top: 10px;
+		font-size: 13px;
 	}
 
 	.exploreContainer {
-		padding-top: 50px;
+		padding-top: 70px;
 	}
 
 	.movieCollage {
 		width: 80%;
-		padding-top: 100px;
-		margin-top: 130px;
+		padding-top: 90px;
+		margin-top: 90px;
 	}
 
 	.homepageContainer {
-		height: 650px;
+		height: 750px;
+		margin-bottom: 60px;
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	.homepageContainer {
-		height: 860px;
+		height: 900px;
+		margin-bottom: 60px;
+	}
+
+	.about {
+		font-size: 20px;
 	}
 }
 
 @media only screen and (min-width: 1024px) {
 	.homepageContainer {
-		height: 1170px;
+		height: 1270px;
 	}
 
 	.studioGhibliLogo {
@@ -118,11 +135,14 @@
 
 @media only screen and (min-width: 1025px) {
 	.homepageContainer {
-		height: 900px;
+		height: auto;
+		width: 100%;
+		overflow: scroll;
+		padding-bottom: 35px;
 	}
 
 	.studioGhibliLogo {
-		margin-top: -50px;
+		margin-top: 10px;
 		width: 50%;
 	}
 
@@ -130,10 +150,11 @@
 		font-size: 20px;
 		padding-left: 150px;
 		padding-right: 150px;
+		margin-top: 20px;
 	}
 
 	.movieCollage {
 		width: 50%;
-		margin-top: 70px;
+		margin-top: 90px;
 	}
 }
