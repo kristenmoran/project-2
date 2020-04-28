@@ -13,7 +13,7 @@ function Homepage() {
 					Studio Ghibli is a Japanese animation film studio known for its high
 					quality filmmaking and artistry. Garnering numerous awards and
 					critical acclaim, Studio Ghibli's feature films are some of the most
-					beloved animated works across the globe.
+					beloved and influential animated works across the globe.
 				</p>
 			</main>
 			<section className='exploreContainer'>
