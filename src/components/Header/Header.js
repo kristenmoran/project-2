@@ -6,11 +6,13 @@ function Header() {
 	return (
 		<header className='container'>
 			<nav className='navContainer'>
-				<Link className='appName'>Studio Ghibli Database</Link>
-				<Link className='homepage' to=''>
+				<Link className='appName' to='/'>
+					Studio Ghibli Database
+				</Link>
+				<Link className='homepage' to='/'>
 					Home
 				</Link>
-				<Link className='moviesButton' to=''>
+				<Link className='moviesButton' to='/films'>
 					Movies
 				</Link>
 				<Link className='contact' to='_blank'>

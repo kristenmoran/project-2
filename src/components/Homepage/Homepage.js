@@ -18,7 +18,9 @@ function Homepage() {
 			</main>
 			<section className='exploreContainer'>
 				<img className='movieCollage' src={MovieCollage} alt='film collage' />
-				<Link className='exploreMovies'>Explore Movies</Link>
+				<Link to='/films' className='exploreFilms'>
+					Explore Films
+				</Link>
 			</section>
 		</div>
 	);

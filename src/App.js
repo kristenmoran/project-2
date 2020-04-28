@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Homepage from './components/Homepage/Homepage';
+import MovieList from './components/MovieList/MovieList';
 import Footer from './components/Footer/Footer';
 
 function App() {
+	const url = 'https://ghibliapi.herokuapp.com/films';
+	const [films, setFilms] = useState([
+		'castle in the sky',
+		'my neighbor totoro',
+	]);
+
+	fetch(url)
+		.then((response) => response.json())
+		.then((response) => {
+			setFilms(response.data);
+		})
+		.catch(console.error);
+
 	return (
 		<div className='App'>
 			<Header />
-			<Homepage />
+			<Switch>
+				<Route path='/' exact={true} component={Homepage} />
+				<Route path='/films' exact={true} component={MovieList} />
+			</Switch>
 			<Footer />
 		</div>
 	);

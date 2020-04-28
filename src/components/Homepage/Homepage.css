@@ -44,10 +44,11 @@
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 0;
 	justify-content: center;
 }
 
-.exploreMovies {
+.exploreFilms {
 	font-family: 'Spartan', sans-serif;
 	text-decoration: none;
 	color: black;
@@ -127,7 +128,7 @@
 		width: 80%;
 	}
 
-	.exploreMovies {
+	.exploreFilms {
 		font-size: 25px;
 		margin-top: 10px;
 	}
