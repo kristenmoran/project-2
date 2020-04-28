@@ -1,1 +1,18 @@
+.movieListContainer {
+	background-color: #f6f0ed;
+	display: flex;
+	position: fixed;
+	height: auto;
+	width: 100%;
+	overflow: scroll;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	margin-bottom: 60px;
+}
 
+.filmList {
+	font-family: 'Spartan', sans-serif;
+}

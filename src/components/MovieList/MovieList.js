@@ -1,10 +1,14 @@
 import React from 'react';
+import './MovieList.css'
 
-function MovieList() {
-	// let movieList = films.map(film)
+function MovieList({ films }) {
+	if (films.length === 0) {
+		return <div className='loading'>Loading Movies</div>;
+	}
+
 	return (
-		<div>
-			<div className='test'>Hello from MovieList</div>
+		<div className='movieListContainer'>
+			{films && films.map((movie) => <p className='filmList' key={movie.id}>{movie.title}</p>)}
 		</div>
 	);
 }

@@ -17,7 +17,9 @@ function Homepage() {
 				</p>
 			</main>
 			<section className='exploreContainer'>
-				<img className='movieCollage' src={MovieCollage} alt='film collage' />
+				<Link className='filmsLink' to='/films'>
+					<img className='movieCollage' src={MovieCollage} alt='film collage' />
+				</Link>
 				<Link to='/films' className='exploreFilms'>
 					Explore Films
 				</Link>
