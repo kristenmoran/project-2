@@ -1,5 +1,6 @@
 import React from 'react';
-import './MovieList.css'
+import { Link } from 'react-router-dom';
+import './MovieList.css';
 
 function MovieList({ films }) {
 	if (films.length === 0) {
@@ -8,7 +9,14 @@ function MovieList({ films }) {
 
 	return (
 		<div className='movieListContainer'>
-			{films && films.map((movie) => <p className='filmList' key={movie.id}>{movie.title}</p>)}
+			{films &&
+				films.map((movie) => (
+					<div key={movie.id} className='filmsList'>
+						<Link to='/films:title' className='films' key={movie.id}>
+							{movie.title}
+						</Link>
+					</div>
+				))}
 		</div>
 	);
 }
