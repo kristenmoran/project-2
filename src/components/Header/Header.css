@@ -1,7 +1,3 @@
-.title {
-	font-family: 'Roboto', sans-serif;
-}
-
 .container {
 	background-color: #f6f0ed;
 	padding: 30px;
@@ -20,6 +16,7 @@
 	box-shadow: 0 0 15px 0 black;
 }
 
+.appName,
 .homepage,
 .moviesButton,
 .contact {
@@ -44,6 +41,7 @@
 		align-items: center;
 		box-shadow: 0 0 5px 0 black;
 		justify-content: center;
+		flex-direction: column;
 	}
 
 	.container {
@@ -53,12 +51,17 @@
 	.homepage,
 	.moviesButton,
 	.contact {
-		font-size: 15px;
-		margin: 12px;
+		display: none;
 	}
 }
 
 @media only screen and (max-width: 1024px) {
+	.navContainer {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.appName,
 	.homepage,
 	.moviesButton,
 	.contact {

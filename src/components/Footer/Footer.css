@@ -1,7 +1,7 @@
 .footerContainer {
 	background-color: #717c89;
 	display: flex;
-	position: fixed;
+	position: relative;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -19,9 +19,16 @@
 	margin: 20px;
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (min-width: 768px) {
 	.footerContainer {
 		align-items: center;
 		justify-content: center;
+		position: relative;
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	.footerContainer {
+		position: relative;
 	}
 }

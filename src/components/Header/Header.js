@@ -6,6 +6,7 @@ function Header() {
 	return (
 		<header className='container'>
 			<nav className='navContainer'>
+				<Link className='appName'>Studio Ghibli Database</Link>
 				<Link className='homepage' to=''>
 					Home
 				</Link>
@@ -13,7 +14,7 @@ function Header() {
 					Movies
 				</Link>
 				<Link className='contact' to='_blank'>
-					Contact
+					Search
 				</Link>
 			</nav>
 		</header>
