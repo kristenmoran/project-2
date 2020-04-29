@@ -8,16 +8,19 @@ function MovieList({ films }) {
 	}
 
 	return (
-		<div className='movieListContainer'>
-			{films &&
-				films.map((movie) => (
-					<div key={movie.id} className='filmsList'>
-						<Link to={'/films/' + movie.title} className='films' key={movie.id}>
-							{movie.title}
-						</Link>
-					</div>
-				))}
-		</div>
+			<div className='movieListContainer'>
+				{films &&
+					films.map((movie) => (
+						<div key={movie.id} className='filmsList'>
+							<Link
+								to={'/films/' + movie.title}
+								className='films'
+								key={movie.id}>
+								{movie.title}
+							</Link>
+						</div>
+					))}
+			</div>
 	);
 }
 

@@ -1,13 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
 .movieListContainer {
 	background-color: #f6f0ed;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 20px;
-	grid-auto-rows: 100px;
-	justify-items: center;
 	position: fixed;
 	height: auto;
 	width: 100%;
+	margin: 0 auto;
 	overflow: scroll;
 	top: 80px;
 	left: 0;
@@ -15,32 +15,39 @@
 	bottom: 0;
 	z-index: -1;
 	margin-bottom: 60px;
-}
-
-.filmsList {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	/* margin-bottom: 60px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: space-between;
+	flex-wrap: wrap; */
 }
 
 .films {
 	display: block;
-	text-align: center;
-	padding: 20px;
-	padding-bottom: 5px;
-	margin: 0;
 	font-family: 'Spartan', sans-serif;
-	font-size: 20px;
-	text-decoration: none;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	margin: 0 0 1rem 0;
+	font-size: 1.5rem;
 	color: black;
+	text-decoration: none;
+	background-color: #f6f0ed;
+	align-items: center;
 }
 
 .films:hover {
-	border-bottom: 2px solid black;
+	text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 	.movieListContainer {
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 0px;
 	}
-}
+} */
