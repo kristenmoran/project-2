@@ -75,8 +75,8 @@
 }
 
 .exploreFilms:hover {
-	border-bottom: 1px solid currentColor;
-	/* text-decoration: underline; */
+	color: currentColor;
+	text-decoration: underline;
 }
 
 .filmsLink {

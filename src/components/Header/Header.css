@@ -22,10 +22,15 @@
 	padding-bottom: 5px;
 }
 
+.appName:hover {
+	text-decoration: none;
+	color: white;
+}
+
 .homepage:hover,
 .moviesButton:hover,
 .contact:hover {
-	border-bottom: 1px solid currentColor;
+	text-decoration: underline currentColor;
 }
 
 @media only screen and (max-width: 812px) {

@@ -8,13 +8,13 @@ function MovieList({ films }) {
 	}
 
 	return (
-		<div className='movieListContainer container-fluid row row-cols-2' >
+		<div className='movieListContainer container-fluid'>
 			{films &&
 				films.map((movie) => (
-					<div key={movie.id} className='filmsList'>
+					<div key={movie.id} className='filmsList row justify-content-center'>
 						<Link
 							to={`/films/${movie.title}`}
-							className='films col-lg text-center'
+							className='films col col-sm-12 col-lg-6 text-center'
 							key={movie.id}>
 							{movie.title}
 						</Link>
