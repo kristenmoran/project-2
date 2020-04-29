@@ -30,7 +30,7 @@ function App() {
 					render={(props) => <MovieList films={films} />}
 				/>
 				<Route
-          path='/films/:title'
+					path='/films/:title'
 					exact={true}
 					render={(props) => <Movie match={props.match} films={films} />}
 				/>
