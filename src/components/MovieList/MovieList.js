@@ -14,8 +14,8 @@ function MovieList({ films }) {
 
 	return (
 		<div className='movieListContainer'>
+			<h1 className='moviesTitle'>The Movies of Studio Ghibli</h1>
 			<Container className='container-fluid d-flex justify-content-center'>
-				<h1 className='moviesTitle'>The Films of Studio Ghibli</h1>
 				<Row>
 					{films &&
 						films.map((movie) => (
