@@ -16,6 +16,7 @@ function MovieList({ films }) {
 		<Container>
 			<Row>
 				<div className='movieListContainer'>
+					<h1 className='moviesTitle'>The Films of Studio Ghibli</h1>
 					{films &&
 						films.map((movie) => (
 							<Col sm={true} key={movie.id} className='mb-3'>
@@ -26,7 +27,7 @@ function MovieList({ films }) {
 									<Card.Img variant='top' src={Poster} alt={movie.title} />
 									<Link
 										to={`/films/${movie.title}`}
-										className='films'
+										className='films btn stretched-link'
 										key={movie.id}>
 										{movie.title}
 									</Link>
