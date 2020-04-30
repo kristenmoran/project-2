@@ -15,6 +15,7 @@ function MovieList({ films }) {
 	return (
 		<div className='movieListContainer'>
 			<h1 className='moviesTitle'>The Movies of Studio Ghibli</h1>
+            <h4 className='toDoDescription'>Select a film for more details</h4>
 			<Container className='container-fluid d-flex justify-content-center'>
 				<Row>
 					{films &&

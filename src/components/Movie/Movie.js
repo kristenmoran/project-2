@@ -12,12 +12,12 @@ function Movie({ films, match }) {
 		<div className='movieContainer'>
 			<Container>
 				<Row>
-					<div className='col-md-4'>
-						<img className='img-fluid' src={Poster} alt='movie poster' />
+					<div className='col-md-6'>
+						<img className='originalPoster img-fluid' src={Poster} alt='movie poster' />
 					</div>
 					{movie ? (
 						<Col>
-							<div key={movie.id} className='descriptionContainer col-md-8'>
+							<div key={movie.id} className='descriptionContainer col-md-12'>
 								<h1 className='movieTitle'>{movie.title}</h1>
 								<h3 className='director'>Director: {movie.director}</h3>
 								<h3 className='releaseDate'>{movie.release_date}</h3>

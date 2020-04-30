@@ -1,15 +1,20 @@
 .movieContainer {
 	background-color: #f6f0ed;
 	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-bottom: 100px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
 	overflow-y: auto;
 	z-index: -2;
 }
 
 .movieTitle {
 	font-family: 'Spartan', sans-serif;
-	/* this will be for mobile view */
-	padding-top: 10px;
 }
 
 .releaseDate {
@@ -23,11 +28,60 @@
 
 .movieDescription {
 	font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-style: italic;
+	font-size: 25px;
+	font-style: italic;
 }
 
 .rtScore {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+	.movieTitle {
+		padding-top: 10px;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.originalPoster {
+		padding-top: 140px;
+	}
+
+	.movieContainer {
+		padding-bottom: 120px;
+	}
+
+	.movieTitle {
+		padding-top: 10px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.movieContainer {
+		padding-bottom: 320px;
+	}
+
+	.originalPoster {
+		padding-top: 300px;
+	}
+	.descriptionContainer {
+		padding-top: 300px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.movieContainer {
+		padding-bottom: 100px;
+		padding-top: 85px;
+	}
+
+	.descriptionContainer {
+		padding-top: 30px;
+	}
+
+	.originalPoster {
+		padding-top: 30px;
+	}
 }

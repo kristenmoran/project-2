@@ -22,6 +22,14 @@
 	text-align: center;
 }
 
+.toDoDescription {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
 .films {
 	font-family: 'Spartan', sans-serif;
 	text-align: center;
