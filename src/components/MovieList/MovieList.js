@@ -12,7 +12,7 @@ import Posters from '../../imgs/posters/Posters';
 function MovieList({ films }) {
 	if (films.length === 0) {
 		return <div className='loading'>Loading Movies</div>;
-    }
+	}
 
 	return (
 		<div className='movieListContainer'>
@@ -27,7 +27,7 @@ function MovieList({ films }) {
 									style={{ width: '18rem' }}
 									key={movie.id}
 									className='filmsList text-center'>
-									<CardImage movieId={movie.id}/>
+									<CardImage movieId={movie.id} />
 									<Link
 										to={`/films/${movie.title}`}
 										className='films btn stretched-link'
