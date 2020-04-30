@@ -55,28 +55,33 @@
 
 .movieListContainer {
 	background-color: #f6f0ed;
-	height: 100vh;
-	width: 100vw;
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
+	padding-top: 90px;
+	padding-bottom: 80px;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
 	overflow-y: auto;
-	padding-top: 40px;
-	padding-bottom: 160px;
+	z-index: -2;
+	/* height: 100vh;
+	position: fixed;
+	top: 80px;
+	padding-bottom: 160px; */
 }
 
 .moviesTitle {
-	font-family: 'Spartan', sans-serif;
+	/* font-family: 'Spartan', sans-serif;
 	align-content: center;
 	text-align: center;
 	margin-top: -10px;
-	margin-bottom: 20px;
+	margin-bottom: 20px; */
+}
+
+.card {
+	z-index: 0;
 }
 
 .films {
