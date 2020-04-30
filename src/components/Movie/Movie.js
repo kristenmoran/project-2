@@ -12,7 +12,7 @@ function Movie({ films, match }) {
 		<div className='movieContainer'>
 			<Container>
 				<Row>
-					<div className='col-md-6'>
+					<div className='originalPoster col-md-6'>
 						<MovieImage movieId={movie.id} />
 					</div>
 					{movie ? (

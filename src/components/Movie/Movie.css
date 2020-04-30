@@ -45,10 +45,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.originalPoster {
-		padding-top: 140px;
-	}
-
 	.movieContainer {
 		padding-bottom: 120px;
 	}
@@ -60,28 +56,29 @@
 
 @media only screen and (min-width: 1024px) {
 	.movieContainer {
-		padding-bottom: 320px;
+		padding-bottom: 330px;
 	}
 
-	.originalPoster {
-		padding-top: 300px;
-	}
 	.descriptionContainer {
 		padding-top: 300px;
+	}
+
+	.movieTitle {
+		text-align: left;
 	}
 }
 
 @media only screen and (min-width: 1025px) {
+	.movieTitle {
+		text-align: left;
+	}
+
 	.movieContainer {
 		padding-bottom: 100px;
 		padding-top: 85px;
 	}
 
 	.descriptionContainer {
-		padding-top: 30px;
-	}
-
-	.originalPoster {
 		padding-top: 30px;
 	}
 }
