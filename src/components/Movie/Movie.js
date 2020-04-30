@@ -12,15 +12,7 @@ function Movie({ match }) {
 		fetch(url)
 			.then((response) => response.json())
 			.then((response) => {
-				let currentMovie;
-				// if coming from a Link component
-				if (match.params) {
-					currentMovie = response.find(({ id }) => id === match.params.id);
-				} else {
-					// if doing a page refresh, rely on the path
-					let currentMovieId = window.location.pathname.split('/')[2];
-					currentMovie = response.find(({ id }) => id === currentMovieId);
-				}
+				let currentMovie = response.find(({ id }) => id === match.params.id);
 				setMovie(currentMovie);
 			})
 			.catch(console.error);
