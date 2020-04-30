@@ -27,7 +27,7 @@ function MovieList({ films }) {
 									className='filmsList text-center'>
 									<CardImage movieId={movie.id} />
 									<Link
-										to={`/films/${movie.title}`}
+										to={`/films/${movie.id}`}
 										className='films btn stretched-link'
 										key={movie.id}>
 										{movie.title}

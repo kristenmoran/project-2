@@ -6,7 +6,7 @@ import './Movie.css';
 import MovieImage from '../MovieImage/MovieImage';
 
 function Movie({ films, match }) {
-	let movie = films.find(({ title }) => title === match.params.title);
+	let movie = films.find(({ id }) => id === match.params.id);
 
 	return (
 		<div className='movieContainer'>
