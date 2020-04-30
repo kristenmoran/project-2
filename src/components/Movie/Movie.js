@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Movie.css';
 import MovieImage from '../MovieImage/MovieImage';
+import MovieVideo from '../MovieVideo/MovieVideo';
 
 function Movie({ match }) {
 	const url = 'https://ghibliapi.herokuapp.com/films';
@@ -16,9 +17,10 @@ function Movie({ match }) {
 				setMovie(currentMovie);
 			})
 			.catch(console.error);
-	}, []);
+	}, [match.params.id]);
 
 	if (!movie) return null;
+
 	return (
 		<div className='movieContainer'>
 			<Container>
@@ -36,6 +38,7 @@ function Movie({ match }) {
 								<h6 className='rtScore'>
 									Rotten Tomatoes Score: {movie.rt_score}%
 								</h6>
+								<MovieVideo movieId={movie.id} />
 							</div>
 						</Col>
 					) : (
