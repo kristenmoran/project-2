@@ -1,7 +1,7 @@
 import React from 'react';
 import Posters from '../../imgs/posters/Posters';
 import images from '../../imgs/posters/imagesUrl';
-import './MovieImage.css'
+import './MovieImage.css';
 
 function MovieImage(props) {
 	let moviePoster = Posters.find((poster) => props.movieId === poster.id);
