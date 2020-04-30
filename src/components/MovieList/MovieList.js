@@ -13,28 +13,31 @@ function MovieList({ films }) {
 	}
 
 	return (
-		<Container>
+		<Container className='container-fluid d-flex justify-content-center'>
+			<h1 className='moviesTitle'>The Films of Studio Ghibli</h1>
 			<Row>
-				<div className='movieListContainer'>
-					<h1 className='moviesTitle'>The Films of Studio Ghibli</h1>
-					{films &&
-						films.map((movie) => (
-							<Col sm={true} key={movie.id} className='mb-3'>
-								<Card
-									style={{ width: '18rem', display: 'inline-block' }}
-									key={movie.id}
-									className='filmsList text-center'>
-									<Card.Img variant='top' src={Poster} alt={movie.title} />
-									<Link
-										to={`/films/${movie.title}`}
-										className='films btn stretched-link'
-										key={movie.id}>
-										{movie.title}
-									</Link>
-								</Card>
-							</Col>
-						))}
-				</div>
+				{films &&
+					films.map((movie) => (
+						<Col sm={true} key={movie.id} className='mb-3 col-lg-4 col-m2-12'>
+							<Card
+								style={{ width: '18rem' }}
+								key={movie.id}
+								className='filmsList text-center'>
+								<Card.Img
+									className='img-fluid'
+									variant='top'
+									src={Poster}
+									alt={movie.title}
+								/>
+								<Link
+									to={`/films/${movie.title}`}
+									className='films btn stretched-link'
+									key={movie.id}>
+									{movie.title}
+								</Link>
+							</Card>
+						</Col>
+					))}
 			</Row>
 		</Container>
 	);
