@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Movie.css';
 import MovieImage from '../MovieImage/MovieImage';
 
-function Movie({ films, match }) {
-	let movie = films.find(({ id }) => id === match.params.id);
+function Movie({ match }) {
+	const url = 'https://ghibliapi.herokuapp.com/films';
+	const [movie, setMovie] = useState({});
+	useEffect(() => {
+		fetch(url)
+			.then((response) => response.json())
+			.then((response) => {
+				let currentMovie;
+				// if coming from a Link component
+				if (match.params) {
+					currentMovie = response.find(({ id }) => id === match.params.id);
+				} else {
+					// if doing a page refresh, rely on the path
+					let currentMovieId = window.location.pathname.split('/')[2];
+					currentMovie = response.find(({ id }) => id === currentMovieId);
+				}
+				setMovie(currentMovie);
+			})
+			.catch(console.error);
+	}, []);
 
+	if (!movie) return null;
 	return (
 		<div className='movieContainer'>
 			<Container>
