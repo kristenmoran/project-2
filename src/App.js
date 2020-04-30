@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
 	const url = 'https://ghibliapi.herokuapp.com/films';
-  const [films, setFilms] = useState([]);
+	const [films, setFilms] = useState([]);
 
 	useEffect(() => {
 		fetch(url)
