@@ -5,9 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-// import Poster from '../../imgs/posters/myneighbortotoro.jpg';
 import CardImage from '../Card/CardImage';
-import Posters from '../../imgs/posters/Posters';
 
 function MovieList({ films }) {
 	if (films.length === 0) {

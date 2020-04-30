@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Movie.css';
-import Poster from '../../imgs/posters/myneighbortotoro.jpg';
+import MovieImage from '../MovieImage/MovieImage';
 
 function Movie({ films, match }) {
 	let movie = films.find(({ title }) => title === match.params.title);
@@ -13,7 +13,7 @@ function Movie({ films, match }) {
 			<Container>
 				<Row>
 					<div className='col-md-6'>
-						<img className='originalPoster img-fluid' src={Poster} alt='movie poster' />
+						<MovieImage movieId={movie.id} />
 					</div>
 					{movie ? (
 						<Col>
