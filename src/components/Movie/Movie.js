@@ -9,21 +9,21 @@ function Movie({ films, match }) {
 	let movie = films.find(({ title }) => title === match.params.title);
 
 	return (
-		<Container>
-			<div className='movieContainer'>
+		<div className='movieContainer'>
+			<Container>
 				<Row>
-					<div className='col-md-8'>
+					<div className='col-md-4'>
 						<img className='img-fluid' src={Poster} alt='movie poster' />
 					</div>
 					{movie ? (
 						<Col>
-							<div key={movie.id} className='descriptionContainer col-md-4'>
+							<div key={movie.id} className='descriptionContainer col-md-8'>
 								<h1 className='movieTitle'>{movie.title}</h1>
+								<h3 className='director'>Director: {movie.director}</h3>
 								<h3 className='releaseDate'>{movie.release_date}</h3>
-								<h3 className='director'>{movie.director}</h3>
 								<p className='movieDescription'>{movie.description}</p>
 								<h6 className='rtScore'>
-									Rotten Tomatoes Score: {movie.rt_score}
+									Rotten Tomatoes Score: {movie.rt_score}%
 								</h6>
 							</div>
 						</Col>
@@ -31,8 +31,8 @@ function Movie({ films, match }) {
 						<p>Loading</p>
 					)}
 				</Row>
-			</div>
-		</Container>
+			</Container>
+		</div>
 	);
 }
 

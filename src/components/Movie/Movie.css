@@ -1,0 +1,33 @@
+.movieContainer {
+	background-color: #f6f0ed;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	overflow-y: auto;
+	z-index: -2;
+}
+
+.movieTitle {
+	font-family: 'Spartan', sans-serif;
+	/* this will be for mobile view */
+	padding-top: 10px;
+}
+
+.releaseDate {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+.director {
+	font-family: 'Roboto', sans-serif;
+}
+
+.movieDescription {
+	font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.rtScore {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
