@@ -31,7 +31,8 @@
 .homepage:hover,
 .moviesButton:hover,
 .contact:hover {
-	text-decoration: underline currentColor;
+	text-decoration: underline;
+	color: white;
 }
 
 @media only screen and (max-width: 812px) {
