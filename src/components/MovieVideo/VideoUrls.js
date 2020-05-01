@@ -1,7 +1,7 @@
 export default [
 	{
 		id: '2baf70d1-42bb-4437-b551-e5fed5a87abe',
-		videoURL: 'https://www.youtube.com/watch?v=8ykEy-yPBFc',
+		videoUrl: 'https://www.youtube.com/watch?v=8ykEy-yPBFc',
 	},
 	{
 		id: '12cfb892-aac0-4c5b-94af-521852e46d6a',
