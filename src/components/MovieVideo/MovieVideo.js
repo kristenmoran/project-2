@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import VideoUrls from './VideoUrls';
+import './MovieVideo.css'
 
 function MovieVideo(props) {
 	let trailer = VideoUrls.find((video) => props.movieId === video.id);
@@ -8,7 +9,7 @@ function MovieVideo(props) {
 	if (!trailer) return null;
 
 	return (
-		<div>
+		<div className='trailerContainer'>
 			<ReactPlayer
 				className='react-player'
 				url={trailer.videoUrl}

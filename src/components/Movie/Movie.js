@@ -43,9 +43,9 @@ function Movie({ match }) {
 					) : (
 						<p>Loading</p>
 					)}
+					<h3 className='trailerHeading col-md-12'>Watch the trailer</h3>
+					<MovieVideo movieId={movie.id} className='trailer col-md-12' />
 				</Row>
-                <h3 className='trailerHeading'>Watch the trailer</h3>
-				<MovieVideo movieId={movie.id} className='trailer col-md-12' />
 			</Container>
 		</div>
 	);

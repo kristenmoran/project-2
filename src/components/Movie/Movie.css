@@ -43,6 +43,11 @@
 	padding-top: 30px;
 }
 
+.trailer {
+	position: absolute;
+	padding-left: 10px;
+}
+
 @media only screen and (min-width: 375px) {
 	.movieTitle {
 		padding-top: 10px;
@@ -86,7 +91,7 @@
 	}
 
 	.descriptionContainer {
-		padding-top: 30px;
+		padding-top: 50px;
 	}
 }
 

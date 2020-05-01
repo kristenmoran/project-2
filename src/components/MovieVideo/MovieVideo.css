@@ -1,0 +1,23 @@
+@media only screen and (min-width: 375px) {
+	.trailerContainer {
+		padding-left: 20px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.trailerContainer {
+		padding-left: 45px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.trailerContainer {
+		padding-left: 150px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.trailerContainer {
+		padding-left: 220px;
+	}
+}
