@@ -28,7 +28,7 @@ function Header() {
 						</li>
 					</ul>
 				</div>
-				<Link to='/' className='burger'>
+				<Link className='burger'>
 					<div className='line1'></div>
 					<div className='line2'></div>
 					<div className='line3'></div>
