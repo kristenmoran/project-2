@@ -5,8 +5,6 @@ import VideoUrls from './VideoUrls'
 function MovieVideo (props) {
 	let trailer = VideoUrls.find((video) => props.movieId === video.id)
 
-	console.log(trailer)
-
 	if (!trailer) return null;
 	
 	return (
