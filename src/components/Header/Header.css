@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .navContainer {
 	background-color: #717c89;
 	position: fixed;
@@ -6,22 +10,39 @@
 	right: 0;
 	height: 80px;
 	display: flex;
-	/* justify-content: space-around; */
+	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 0 15px 0 black;
 	z-index: 1;
 }
 
-.appName,
+.appName {
+	font-family: 'Spartan', sans-serif;
+	color: white;
+	font-size: 20px;
+	padding-left: 30px;
+}
+
 .homepage,
 .moviesButton,
 .contact {
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
-	margin: 20px;
 	font-family: 'Spartan', sans-serif;
-	padding-bottom: 5px;
+	color: white;
+	padding-right: 30px;
+}
+
+.navLinks ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+	width: 40%;
+	list-style: none;
+}
+
+.navList li {
+	padding: 1rem;
+	display: block;
 }
 
 .appName:hover {
@@ -36,11 +57,19 @@
 	color: white;
 }
 
+.burger {
+	position: absolute;
+	right: 1rem;
+	padding-bottom: 5px;
+	display: none;
+}
+
 .burger div {
 	width: 25px;
 	height: 3px;
 	background-color: white;
 	margin: 5px;
+	border-radius: 10px;
 }
 
 @media only screen and (max-width: 812px) {
@@ -57,10 +86,8 @@
 		padding: 10px;
 	}
 
-	.homepage,
-	.moviesButton,
-	.contact {
-		display: none;
+	.burger {
+		display: flex;
 	}
 }
 
@@ -75,5 +102,39 @@
 	.moviesButton,
 	.contact {
 		font-size: 25px;
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navContainer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.appName {
+		padding-left: 30px;
+		font-size: 15px;
+	}
+
+	.navLinks {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+		padding-right: 40px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.burger {
+		padding-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.burger {
+		padding-right: 10px;
 	}
 }
