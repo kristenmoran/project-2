@@ -57,7 +57,7 @@
 
 @media only screen and (min-width: 768px) {
 	.movieContainer {
-		padding-bottom: 260px;
+		padding-bottom: 180px;
 	}
 
 	.movieTitle {
@@ -102,7 +102,7 @@
 	}
 
 	.descriptionContainer {
-		padding-top: 200px;
+		padding-top: 130px;
 	}
 }
 

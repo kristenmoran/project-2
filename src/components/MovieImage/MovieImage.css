@@ -1,23 +1,23 @@
 @media only screen and (min-width: 768px) {
 	.originalPoster {
 		padding-top: 10px;
-    }
+	}
 }
 
 @media only screen and (min-width: 1024px) {
-    .originalPoster {
-        padding-top: 150px;
-    }
+	.originalPoster {
+		padding-top: 150px;
+	}
 }
 
 @media only screen and (min-width: 1025px) {
-    .originalPoster {
+	.originalPoster {
 		padding-top: 30px;
 	}
 }
 
 @media only screen and (min-height: 1366px) {
-    .originalPoster {
-        padding-top: 100px;
-    }
+	.originalPoster {
+		padding-top: 70px;
+	}
 }
