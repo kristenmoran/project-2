@@ -10,7 +10,7 @@ function Footer() {
 					Made by
 					<a
 						className='linkedin'
-						href='https://www.linkedin.com/in/kristenlmoran/'
+						href='https://github.com/kristenmoran'
 						target='_blank'
 						rel='noopener noreferrer'>
 						Kristen Moran

@@ -19,7 +19,7 @@ function Header() {
 						<li>
 							<a
 								className='contact'
-								href='https://github.com/kristenmoran'
+								href='https://www.linkedin.com/in/kristenlmoran/'
 								target='_blank'
 								rel='noopener noreferrer'>
 								Contact
