@@ -37,6 +37,12 @@
 	font-size: 20px;
 }
 
+.trailerHeading {
+	font-family: 'Spartan', sans-serif;
+	text-align: center;
+	padding-top: 30px;
+}
+
 @media only screen and (min-width: 375px) {
 	.movieTitle {
 		padding-top: 10px;
@@ -81,5 +87,22 @@
 
 	.descriptionContainer {
 		padding-top: 30px;
+	}
+}
+
+@media only screen and (min-height: 1336px) {
+	.movieContainer {
+		padding-top: 20px;
+		padding-bottom: 90px;
+	}
+
+	.descriptionContainer {
+		padding-top: 200px;
+	}
+}
+
+@media only screen and (min-height: 1024px) {
+	.movieContainer {
+		padding-bottom: 120px;
 	}
 }

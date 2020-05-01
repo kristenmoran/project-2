@@ -58,6 +58,16 @@
 	.moviesTitle {
 		padding-right: 40px;
 	}
+
+	.toDoDescription {
+		padding-right: 40px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.movieListContainer {
+		padding-right: 40px;
+	}
 }
 
 @media only screen and (min-width: 414px) {

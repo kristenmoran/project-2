@@ -106,7 +106,7 @@
 		padding-right: 20px;
 		padding-left: 20px;
 		margin-top: 10px;
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	.exploreContainer {
@@ -226,7 +226,7 @@
 
 	.studioGhibliLogo {
 		margin-top: 10px;
-		width: 50%;
+		width: 40%;
 	}
 
 	.about {
@@ -244,7 +244,35 @@
 	.exploreFilms {
 		left: 0;
 		right: 0;
-		top: 990%;
 		width: 250px;
+		padding-top: 140px;
 	}
 }
+
+@media only screen and (min-height: 667px) {
+	.exploreFilms {
+		padding-top: 10px;
+	}
+}
+
+@media only screen and (min-height: 812px) {
+	.studioGhibliLogo {
+		padding-top: 55px;
+	}
+}
+
+@media only screen and (min-height: 768px) {
+	.studioGhibliLogo {
+		padding-top: 10px;
+	}
+
+	.exploreFilms {
+		padding-bottom: 40px;
+	}
+}
+
+/* @media only screen and (min-height: 769px) {
+	.exploreFilms{
+		padding-top: 90px;
+	}
+} */

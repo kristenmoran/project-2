@@ -38,13 +38,14 @@ function Movie({ match }) {
 								<h6 className='rtScore'>
 									Rotten Tomatoes Score: {movie.rt_score}%
 								</h6>
-								<MovieVideo movieId={movie.id} />
 							</div>
 						</Col>
 					) : (
 						<p>Loading</p>
 					)}
 				</Row>
+                <h3 className='trailerHeading'>Watch the trailer</h3>
+				<MovieVideo movieId={movie.id} className='trailer col-md-12' />
 			</Container>
 		</div>
 	);
