@@ -14,6 +14,7 @@ function MovieVideo (props) {
 			<ReactPlayer
 				className='react-player'
 				url={trailer.videoUrl}
+				controls={true}
 				width='100%'
 				height='100%'
 			/>
