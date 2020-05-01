@@ -12,27 +12,17 @@ function Header() {
 				<div className='navLinks'>
 					<ul className='navList'>
 						<li>
-							<Link className='homepage' to='/'>
-								Home
-							</Link>
-						</li>
-						<li>
 							<Link className='moviesButton' to='/films'>
 								Movies
 							</Link>
 						</li>
 						<li>
 							<Link className='contact' to='_blank'>
-								Search
+								Contact
 							</Link>
 						</li>
 					</ul>
 				</div>
-				<Link className='burger'>
-					<div className='line1'></div>
-					<div className='line2'></div>
-					<div className='line3'></div>
-				</Link>
 			</nav>
 		</header>
 	);
