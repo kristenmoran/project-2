@@ -3,21 +3,19 @@ import Navbar from 'react-bootstrap/Navbar';
 import './Footer.css';
 
 function Footer() {
-	let prevScrollPosition = window.pageYOffset;
-
-	window.onscroll = function () {
-		let currentScrollPosition = window.pageYOffset;
-		if (prevScrollPosition > currentScrollPosition) {
-			console.log('worked');
-		} else {
-			console.log('error');
-		}
-	};
-
 	return (
 		<div>
 			<Navbar fixed='bottom' className='footerContainer'>
-				<p className='contactInfo'>Made by Kristen Moran</p>
+				<p className='contactInfo'>
+					Made by
+					<a
+						className='linkedin'
+						href='https://www.linkedin.com/in/kristenlmoran/'
+						target='_blank'
+						rel='noopener noreferrer'>
+						Kristen Moran
+					</a>
+				</p>
 			</Navbar>
 		</div>
 	);

@@ -17,9 +17,13 @@ function Header() {
 							</Link>
 						</li>
 						<li>
-							<Link className='contact' to='_blank'>
+							<a
+								className='contact'
+								href='https://github.com/kristenmoran'
+								target='_blank'
+								rel='noopener noreferrer'>
 								Contact
-							</Link>
+							</a>
 						</li>
 					</ul>
 				</div>

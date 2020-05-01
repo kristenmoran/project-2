@@ -10,7 +10,8 @@
 	color: white;
 	box-shadow: 0 0 5px 0 black;
 	font-family: 'Spartan', sans-serif;
-	margin-top: 200px;
+	/* position: sticky;
+	position: -webkit-sticky; */
 }
 
 .contactInfo {
@@ -19,16 +20,29 @@
 	margin: 20px;
 }
 
+.linkedin {
+	color: white;
+	font-family: 'Spartan', sans-serif;
+	padding-left: 5px;
+}
+
+.linkedin:hover {
+	text-decoration: underline white;
+	color: white;
+}
+
 @media only screen and (min-width: 768px) {
 	.footerContainer {
 		align-items: center;
 		justify-content: center;
 		bottom: 0;
+		position: fixed;
 	}
 }
 
 @media only screen and (min-width: 375px) {
 	.footerContainer {
 		bottom: 0;
+		justify-content: center;
 	}
 }
