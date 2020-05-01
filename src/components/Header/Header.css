@@ -6,6 +6,7 @@
 	right: 0;
 	height: 80px;
 	display: flex;
+	/* justify-content: space-around; */
 	align-items: center;
 	box-shadow: 0 0 15px 0 black;
 	z-index: 1;
@@ -33,6 +34,13 @@
 .contact:hover {
 	text-decoration: underline;
 	color: white;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px;
 }
 
 @media only screen and (max-width: 812px) {

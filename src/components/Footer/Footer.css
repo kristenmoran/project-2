@@ -1,7 +1,6 @@
 .footerContainer {
 	background-color: #717c89;
 	display: flex;
-	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -24,14 +23,12 @@
 	.footerContainer {
 		align-items: center;
 		justify-content: center;
-		position: fixed;
 		bottom: 0;
 	}
 }
 
 @media only screen and (min-width: 375px) {
 	.footerContainer {
-		position: fixed;
 		bottom: 0;
 	}
 }
