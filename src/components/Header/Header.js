@@ -13,7 +13,7 @@ function Header() {
 					<ul className='navList'>
 						<li>
 							<Link className='moviesButton' to='/films'>
-								Movies
+								Films
 							</Link>
 						</li>
 						<li>

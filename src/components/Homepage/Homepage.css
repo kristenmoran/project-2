@@ -171,12 +171,13 @@
 		height: auto;
 		width: 100%;
 		overflow: scroll;
-		padding-bottom: 60%;
+		padding-bottom: 50%;
 	}
 	.exploreFilms {
 		left: 0;
 		right: 0;
-		top: 950%;
+		top: 970%;
+		font-size: 21px;
 	}
 }
 
@@ -209,7 +210,7 @@
 
 	.exploreFilms {
 		font-size: 35px;
-		margin-top: 10px;
+		margin-top: -20px;
 		left: 0;
 		right: 0;
 		top: 1070%;
