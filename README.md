@@ -8,6 +8,8 @@ The API I used was the [Studio Ghibli API](https://ghibliapi.herokuapp.com/#).
 
 The problem this project solves is that not many people have seen Studio Ghibli films. This database offers a place for people to learn more about the films and drive interest in watching the films. This database serves as an introduction to films of Studio Ghibli!
 
+The result can be viewed here: [Studio Ghibli Database](https://studioghiblidatabase.herokuapp.com/)
+
 ## From the Database
 
 ### Homepage
