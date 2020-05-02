@@ -68,4 +68,5 @@ Install Studio Ghibli Data:
 ## Contribute
 
 [Source Code](https://github.com/kristenmoran/project-2)
+
 [Issue Tracker](https://github.com/kristenmoran/project-2/issues)
