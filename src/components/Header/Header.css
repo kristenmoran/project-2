@@ -27,6 +27,7 @@
 .contact {
 	font-family: 'Spartan', sans-serif;
 	color: white;
+	font-size: 20px;
 	padding-right: 30px;
 }
 
@@ -85,10 +86,6 @@
 	.container {
 		padding: 10px;
 	}
-
-	.burger {
-		display: flex;
-	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -118,11 +115,6 @@
 
 	.contact {
 		display: none;
-	}
-
-	.burger {
-		display: block;
-		padding-right: 40px;
 	}
 }
 
@@ -165,14 +157,19 @@
 }
 
 @media only screen and (max-height: 812px) {
-	.moviesButton {
-		font-size: 15px;
+	.moviesButton,
+	.contact {
+		font-size: 1rem;
 		padding: 0px;
+	}
+
+	.contact {
+		padding-right: 20px;
 	}
 
 	.appName {
 		display: flex;
-		font-size: 15px;
+		font-size: 1rem;
 		margin-right: -10%;
 	}
 }
